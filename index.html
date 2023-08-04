@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+ 
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+            initial-scale=1, shrink-to-fit=no">
+ 
+    <link rel="stylesheet" href="index.css">
+ 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity=
+"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+ 
+    <title>This or That Car Edition</title>
+</head>
+ 
+<body>
+ 
+    
+    <section class="section-intro">
+        <header>
+            <h1> Ford vs Ferrari </h1>
+        </header>
+        
+ 
+ 
+  <div id="nextPage" class="link-to-book-wrapper">
+    <button id="next" class="link-to-book" href="#playgame" onclick="switchLocation(0)">PLAY GAME</button>
+  </div>
+  <script>
+    function switchLocation(counter) {
+      if (counter == 0) {
+        counter = 1;
+        setTimeout(function() {
+          switchLocation(counter);
+        }, 1000);
+      } else {
+        window.location = "page2.html";
+      }
+    }
+  </script>
+</section>
+
+
+
+ 
+
+
+</body>
+ 
+</html>
